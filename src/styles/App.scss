@@ -3,6 +3,7 @@
 @import "include-media";
 
 // Globals
+
 body {
   font-family: $font-Kumbh-Sans;
   font-size: $font-em;
@@ -26,6 +27,7 @@ body {
   width: 85%;
   height: 60%;
   min-height: 350px;
+  max-width: 500px;
   border-radius: 15px;
   background-color: white;
   padding-bottom: 1em;
@@ -80,4 +82,46 @@ body {
 }
 hr {
   color: $primary-dark-grayish-blue;
+}
+
+// Media Queries
+
+// grey area b/n tablet and phone
+@include media(">=tablet", "<=desktop") {
+  .container {
+    background-color: yellow;
+  }
+  .main {
+    &__profile-img {
+      position: absolute;
+      top: 35%;
+      right: 45%;
+    }
+  }
+}
+// greater than or desktop
+@include media(">=desktop") {
+  .container {
+    background-color: red;
+  }
+  .main {
+    &__profile-img {
+      position: absolute;
+      top: 35%;
+      left: 47.5%;
+    }
+  }
+}
+// greater than or desktop
+@include media(">=HD") {
+  .container {
+    background-color: blue;
+  }
+  .main {
+    &__profile-img {
+      position: relative;
+      top: 70%;
+      left: 40%;
+    }
+  }
 }
