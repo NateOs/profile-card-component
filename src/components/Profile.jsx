@@ -6,7 +6,7 @@ export default function Profile() {
       <div className="main__profile-bg">
         <img className="main__profile-img" src="" alt="" />
       </div>
-      <div className="main__-info">
+      <div className="main__info">
         <h1 className="main__name">
           Victor Crest <span className="main__age">26</span>
         </h1>

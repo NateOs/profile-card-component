@@ -6,13 +6,28 @@
 .container {
   width: 100%;
   height: 100vh;
-  border: solid red 2px;
   background: url(../images/bg-pattern-top.svg) no-repeat,
     url(../images/bg-pattern-bottom.svg) no-repeat;
-  background-position: left -14rem top -9rem, right -13.5rem bottom -9rem;
+  background-position: left -15.5rem top -9rem, right -15.5rem bottom -9rem;
   background-size: 120%, 120%;
   background-color: $primary-dark-cyan;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-//
+//Profile Component
+
+.main {
+  width: 85%;
+  height: 55%;
+  border-radius: 15px;
+  background-color: white;
+  &__profile-bg {
+    width: auto;
+    height: 40%;
+    border-radius: 15px 15px 0 0;
+    background:url(../images/bg-pattern-card.svg)
+  }
+  
+}
