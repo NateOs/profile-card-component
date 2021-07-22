@@ -3,6 +3,10 @@
 @import "include-media";
 
 // Globals
+body {
+  font-family: $font-Kumbh-Sans;
+  font-size: $font-em;
+}
 .container {
   width: 100%;
   height: 100vh;
@@ -21,13 +25,43 @@
 .main {
   width: 85%;
   height: 55%;
+  min-height: 350px;
   border-radius: 15px;
   background-color: white;
   &__profile-bg {
     width: auto;
     height: 40%;
     border-radius: 15px 15px 0 0;
-    background:url(../images/bg-pattern-card.svg)
+    background: url(../images/bg-pattern-card.svg);
   }
-  
+  &__info {
+    text-align: center;
+    margin-bottom: 2.5em;
+    padding-top: 4em;
+  }
+  &__details {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 1em;
+  }
+}
+
+.main__age,
+.main__country,
+.main__stats-subtitle {
+  color: $neutral-dark-gray;
+}
+.main__name {
+  color: $primary-very-dark-desaturated-blue;
+  font-weight: 700;
+}
+.main__stats{
+  text-align: center;
+}
+.main__stats-numbers {
+  font-weight: 700;
+  margin-bottom: .5em;
+}
+.main__stats-subtitle {
+  font-size: .7em;
 }

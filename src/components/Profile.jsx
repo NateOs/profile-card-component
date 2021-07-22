@@ -11,6 +11,8 @@ export default function Profile() {
           Victor Crest <span className="main__age">26</span>
         </h1>
         <p className="main__country">London</p>
+      <hr />
+
       </div>
       <div className="main__details">
         <div className="main__stats">
