@@ -24,10 +24,19 @@ body {
 
 .main {
   width: 85%;
-  height: 55%;
+  height: 60%;
   min-height: 350px;
   border-radius: 15px;
   background-color: white;
+  padding-bottom: 1em;
+  &__profile-img {
+    position: absolute;
+    width: 5.5rem;
+    top: 35%;
+    right: 35%;
+    border-radius: 50px;
+    border: solid white 5px;
+  }
   &__profile-bg {
     width: auto;
     height: 40%;
@@ -53,15 +62,22 @@ body {
 }
 .main__name {
   color: $primary-very-dark-desaturated-blue;
+  padding-bottom: 0.5em;
   font-weight: 700;
 }
-.main__stats{
+.main__stats {
   text-align: center;
 }
 .main__stats-numbers {
   font-weight: 700;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 .main__stats-subtitle {
-  font-size: .7em;
+  font-size: 0.7em;
+}
+.main__country {
+  padding-bottom: 1em;
+}
+hr {
+  color: $primary-dark-grayish-blue;
 }

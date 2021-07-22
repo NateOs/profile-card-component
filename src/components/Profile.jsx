@@ -1,10 +1,10 @@
 import React from "react";
-
+import profile from '../images/image-victor.jpg'
 export default function Profile() {
   return (
     <section className="main">
       <div className="main__profile-bg">
-        <img className="main__profile-img" src="" alt="" />
+        <img className="main__profile-img" src={profile} alt="profile" />
       </div>
       <div className="main__info">
         <h1 className="main__name">
