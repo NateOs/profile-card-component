@@ -89,7 +89,8 @@ hr {
 // grey area b/n tablet and phone
 @include media(">=tablet", "<=desktop") {
   .container {
-    background-color: yellow;
+    background-position: left -10rem top -20rem, right -5rem bottom -35rem;
+    background-size: 50%, 50%;
   }
   .main {
     &__profile-img {
@@ -102,7 +103,8 @@ hr {
 // greater than or desktop
 @include media(">=desktop") {
   .container {
-    background-color: red;
+    background-position: left -10rem top -20rem, right -5rem bottom -35rem;
+    background-size: 50%, 50%;
   }
   .main {
     &__profile-img {
@@ -115,7 +117,8 @@ hr {
 // greater than or desktop
 @include media(">=HD") {
   .container {
-    background-color: blue;
+    background-position: left -10rem top -20rem, right -5rem bottom -35rem;
+    background-size: 50%, 50%;
   }
   .main {
     &__profile-img {
